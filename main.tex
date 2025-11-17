@@ -1,0 +1,346 @@
+\documentclass[12pt]{article}
+ \usepackage{amsmath}
+ \usepackage{latexsym}
+ \usepackage{amsfonts}
+ \usepackage[normalem]{ulem}
+ \usepackage{soul}
+ \usepackage{array}
+ \usepackage{amssymb}
+ \usepackage{extarrows}
+ \usepackage{graphicx}
+ \usepackage[backend=biber,
+ style=numeric,
+ sorting=none,
+ isbn=false,
+ doi=false,
+ url=false,
+ ]{biblatex}\addbibresource{bibliography.bib}
+
+  \usepackage{subfig}
+ \usepackage{wrapfig}
+ \usepackage{txfonts}
+ \usepackage{wasysym}
+ \usepackage{enumitem}
+ \usepackage{adjustbox}
+ \usepackage{ragged2e}
+ \usepackage[svgnames,table]{xcolor}
+ \usepackage{tikz}
+ \usepackage{longtable}
+ \usepackage{changepage}
+ \usepackage{setspace}
+ \usepackage{hhline}
+ \usepackage{multicol}
+ \usepackage{tabto}
+ \usepackage{float}
+ \usepackage{multirow}
+ \usepackage{makecell}
+ \usepackage{fancyhdr}
+ \usepackage[toc,page]{appendix}
+ \usepackage[hidelinks]{hyperref}
+ \usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+ \tikzset{>={Latex[width=1.5mm,length=2mm]}}
+ \usepackage{flowchart}\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.18in,right=0.39in,top=0.79in,bottom=0.79in,headheight=1in]{geometry}
+ \usepackage[utf8]{inputenc}
+ \usepackage[russian]{babel}
+ \usepackage[T1,T2A]{fontenc}
+ \TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,6.5in,}
+
+  \urlstyle{same}
+
+ 
+   %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+  % 1) Section
+ % 1.1) SubSection
+ % 1.1.1) SubSubSection
+ % 1.1.1.1) Paragraph
+ % 1.1.1.1.1) Subparagraph
+
+ 
+  \setcounter{tocdepth}{5}
+ \setcounter{secnumdepth}{5}
+
+ 
+   %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+ 
+  \setlistdepth{9}
+ \renewlist{enumerate}{enumerate}{9}
+ 		\setlist[enumerate,1]{label=\arabic*)}
+ 		\setlist[enumerate,2]{label=\alph*)}
+ 		\setlist[enumerate,3]{label=(\roman*)}
+ 		\setlist[enumerate,4]{label=(\arabic*)}
+ 		\setlist[enumerate,5]{label=(\Alph*)}
+ 		\setlist[enumerate,6]{label=(\Roman*)}
+ 		\setlist[enumerate,7]{label=\arabic*}
+ 		\setlist[enumerate,8]{label=\alph*}
+ 		\setlist[enumerate,9]{label=\roman*}
+
+  \renewlist{itemize}{itemize}{9}
+ 		\setlist[itemize]{label=$\cdot$}
+ 		\setlist[itemize,1]{label=\textbullet}
+ 		\setlist[itemize,2]{label=$\circ$}
+ 		\setlist[itemize,3]{label=$\ast$}
+ 		\setlist[itemize,4]{label=$\dagger$}
+ 		\setlist[itemize,5]{label=$\triangleright$}
+ 		\setlist[itemize,6]{label=$\bigstar$}
+ 		\setlist[itemize,7]{label=$\blacklozenge$}
+ 		\setlist[itemize,8]{label=$\prime$}
+
+  \pagenumbering{gobble}
+ \setlength{\topsep}{0pt}\setlength{\parskip}{9.96pt}
+ \setlength{\parindent}{0pt}
+
+   %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+ 
+  \renewcommand{\arraystretch}{1.3}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+ 
+  \begin{document}
+ \begin{Center}
+ ИТМО
+ \end{Center}\par
+
+  \begin{Center}
+ Институт математики
+ \end{Center}\par
+ \vspace{\baselineskip}
+ ОТЧЕТ \\
+ ЗАЩИЩЕН С ОЦЕНКОЙ\par
+
+  ПРЕПОДАВАТЕЛЬ\par
+
+ 
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{2.05in}p{0.0in}p{1.76in}p{-0.01in}p{1.89in}}
+ %row no:1
+ \multicolumn{1}{p{2.05in}}{\Centering {Преподаватель}} & 
+ \multicolumn{1}{p{0.0in}}{} & 
+ \multicolumn{1}{p{1.76in}}{} & 
+ \multicolumn{1}{p{-0.01in}}{} & 
+ \multicolumn{1}{p{1.89in}}{\Centering {М.Д.Поляк}} \\
+ \hhline{-~-~-}
+ %row no:2
+ \multicolumn{1}{p{2.05in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {должность, уч. степень, звание}}} & 
+ \multicolumn{1}{p{0.0in}}{} & 
+ \multicolumn{1}{p{1.76in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+ \multicolumn{1}{p{-0.01in}}{} & 
+ \multicolumn{1}{p{1.89in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+ \hhline{~~~~~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \vspace{\baselineskip}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{6.49in}}
+ %row no:1
+ \multicolumn{1}{p{6.49in}}{\fontsize{14pt}{16.8pt}\selectfont {\section*{\Centering {ОТЧЕТ О ЛАБОРАТОРНОЙ РАБОТЕ №0}}}}\\
+ \hhline{~}
+ %row no:2
+ \multicolumn{1}{p{6.49in}}{\section*{\Centering {Знакомство с системой контроля версий git и сервисом GitHub}}
+ } \\
+ \hhline{~}
+ %row no:3
+ \multicolumn{1}{p{6.49in}}{\subsubsection*{\Centering {по курсу: ОСНОВЫ СТАТИСТИКИ}}
+ } \\
+ \hhline{~}
+ %row no:4
+ \multicolumn{1}{p{6.49in}}{} \\
+ \hhline{~}
+ %row no:5
+ \multicolumn{1}{p{6.49in}}{} \\
+ \hhline{~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+  РАБОТУ ВЫПОЛНИЛ\par
+
+ 
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{1.3in}p{1.0in}p{-0.04in}p{1.63in}p{-0.04in}p{1.63in}}
+ %row no:1
+ \multicolumn{1}{p{1.3in}}{СТУДЕНТ ГР. №} & 
+ \multicolumn{1}{p{1.0in}}{\Centering {R4160}} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}}{} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}}{\Centering {A.Ф.Прокофьева}} \\
+ \hhline{~-~-~-}
+ %row no:2
+ \multicolumn{1}{p{1.3in}}{} & 
+ \multicolumn{1}{p{1.0in}}{} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+ \hhline{~~~~~~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \begin{Center}
+ Санкт-Петербург \the\year{}
+ \end{Center}\par
+
+ %==================== НАЧАЛО СОДЕРЖИМОГО ОТЧЕТА ====================
+
+ \newpage
+ \pagenumbering{arabic}
+
+Ссылка на репозиторий: \url{https://github.com/AriannaProkofieva/Arianna_ITMO/tree/main}
+
+ \section*{Задание 1.}
+
+ Цель: поразмышлять о своих целях и задачах на текущий семестр
+ 
+ \begin{itemize}
+    \item С помощью веб-интерфейса GitHub создать файл goals.md в своем репозитории.
+    \item Используя язык разметки markdown, создать заголовки "Мой опыт" и "Мои цели".
+    \item Написать один абзац (1-5 предложений) о своем опыте по разработке программного обеспечения. Добавить работающую ссылку в написанный текст (например, на профиль в GitHub).
+    \item Создать нумерованный список из 2 или 3 целей, которых планируете достичь в рамках данного курса.
+    \item Создать ненумерованный список из 3-9 задач, над которыми собираетесь работать в рамках данного курса для достижения поставленных целей.
+    \item Создать папку resources в корне репозитория. Загрузить в эту папку изображение (.png/.jpg/.jpeg) и добавить его в .md файл.
+    \item Не забыть закоммитить файлы в свой репозиторий на GitHub.
+    \item Проверить, что созданный .md файл отформатирован и отображается при предпросмотре именно так, как планировалось.
+ \end{itemize}
+
+ \subsection*{Ход работы:}
+
+ Созданы файлы:
+ \begin{itemize}
+     \item \textbf{goals.md} -- файл с личными целями и опытом
+     \item Папка \textbf{resources/} с изображением
+ \end{itemize}
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{image1.png}
+    \caption{Рисунок 1 - Содержимое файла goals.md}
+\end{figure}
+
+
+ %==================== ЗАДАНИЕ 2 ====================
+
+ \section*{Задание 2.}
+ Цель: научиться использовать git из командной строки
+ \begin{itemize}
+    \item Ознакомиться с инструкцией по работе с git и github из командной строки.
+    \item Клонировать свой репозиторий на локальный компьютер используя команду git clone <ссылка на репозиторий> из командной строки.
+    \item Создать новый файл info.md в локальной копии репозитория.
+    \item Записать в этот файл свое ФИО (полностью), название используемой операционной системы, текущие дату и время, - каждый элемент с новой строки (всего получится 3 строки).
+    \item Выполнить команды git add info.md и git commit в командной строке.
+    \item Ввести краткое описание коммита.
+    \item Выполнить команду git push.
+    \item Создать папку data в корне репозитория и в ней файл dataset.csv. Создать файл .gitignore, в который добавить строку data/. Далее закоммитить .gitignore и попробовать закоммитить data/dataset.csv, после чего отправить коммиты в репозиторий на github.com с помщью git push. Объяснить полученный результат в отчёте.
+ \end{itemize}
+
+ \subsection*{Ход работы:}
+
+ \subsubsection*{1. Клонирование репозитория}
+
+ Команда:
+ \begin{verbatim}
+ git clone https://github.com/AriannaProkofieva/AriannaProkofieva_ITMO.git
+ \end{verbatim}
+ 
+ Результат: репозиторий успешно скопирован на локальный компьютер.
+
+ \subsubsection*{2. Создание файла info.md, коммит и push}
+
+ Команды:
+ \begin{verbatim}
+ notepad info.md
+ git add info.md
+ git commit
+ git push
+ \end{verbatim}
+
+ Результат: файл успешно добавлен в репозиторий на GitHub.
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{image2.png}
+    \caption{Рисунок 2 - Содержимое файла info.md}
+\end{figure}
+
+ \subsubsection*{3. Работа с .gitignore}
+
+ Создан файл .gitignore с содержимым:
+ \begin{verbatim}
+ data/
+ \end{verbatim}
+
+ Затем создана папка data с файлом dataset.csv.
+
+ \subsubsection*{Результат попытки закоммитить data/dataset.csv}
+
+ Команда:
+ \begin{verbatim}
+ git add data/dataset.csv
+ \end{verbatim}
+
+ Результат в консоли:
+ \begin{verbatim}
+ The following paths are ignored by one of your .gitignore files:
+ data
+ hint: Use -f if you really want to add them.
+ hint: Disable this message with "git config set advice.addIgnoredFile false"
+ \end{verbatim}
+
+ \subsection*{Объяснение результата}
+
+ Файл \textbf{data/dataset.csv} не был добавлен в коммит, потому что папка \textbf{data/} указана в файле \textbf{.gitignore}. 
+ Git игнорирует все файлы и папки, перечисленные в этом файле.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{image3.png}
+    \caption{Рисунок 3 - Содержимое файла .gitignore}
+\end{figure}
+
+ %==================== ЗАКЛЮЧЕНИЕ ====================
+
+ \section*{Заключение}
+
+ В ходе выполнения лабораторной работы были освоены навыки работы с веб-интерфейсом GitHub, написания документации на языке Markdown, а также изучены основные команды системы контроля версий Git и принципы использования файла .gitignore.
+
+\end{document}
