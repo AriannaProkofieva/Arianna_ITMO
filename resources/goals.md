@@ -18,3 +18,5 @@
 - Освоить библиотеки pandas, numpy, matplotlib
 - Выполнить все лабораторные работы курса
 - Создать портфолио проектов на GitHub
+
+![Картинка](resources/logo_na_plashke_russkiy_belyy.png)
